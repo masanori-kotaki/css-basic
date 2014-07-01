@@ -1,0 +1,65 @@
+body {
+	padding-top: 50px;
+} 
+#box {
+	position: relative;
+	width: 300px;
+	height: 250px;
+	margin: 0 auto;
+	border: solid 1px #333;
+}
+.text {
+	margin: 20px;	
+}
+/*タスキ表示領域*/
+.tasukiWrap {
+	position: absolute;
+    overflow: hidden;
+	top: -10px;
+	right: -10px;
+	width: 100px;
+	height: 100px;
+}
+/*タスキの裏側の黒地部分*/
+.tasukiWrap:before, .tasukiWrap:after {
+	content: '';
+	display: block;
+	position: absolute;
+	background: #333;
+}
+.tasukiWrap:before {
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 10px;
+}
+.tasukiWrap:after {
+	bottom: 0;
+	right: 0;
+	width: 10px;
+	height: 20px;
+}
+/*タスキ部分*/
+.tasuki {
+	position: absolute;
+	z-index: 5;
+	top: 14px;
+	left: -26px;	
+	width: 150px;
+	padding: 5px 10px;
+	background: #FF5E58;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	/*影*/
+	box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5); 
+	-webkit-box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5); 
+	-moz-box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5); 
+	/*45度傾け*/
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+}
+
+

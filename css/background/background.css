@@ -1,0 +1,29 @@
+body{
+	display: flex;
+}
+
+.box1 { 
+   background-image: url("icon.png"); 
+   background-repeat: no-repeat;
+   width: 300px;
+   height: 300px;
+   border: 1px solid #666;
+}
+ 
+.box2 { 
+   background-image: url("icon.png");
+   background-repeat: no-repeat;
+   background-position: 50px 50px;
+   width: 300px;
+   height: 300px;
+   border: 1px solid #666;
+} 
+
+.box3 { 
+   background-image: url("icon.png");
+   background-repeat: no-repeat;
+   background-position: -50px -50px;
+   width: 300px;
+   height: 300px;
+   border: 1px solid #666;
+}

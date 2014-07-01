@@ -1,0 +1,20 @@
+header{
+	background: lightblue;
+	width: 200px;
+	height: 100px;
+	float:left;
+}
+
+article{
+	background: lightgreen;
+	width: 200px;
+	height: 100px;
+	float:left;
+}
+
+footer{
+	background: lightyellow;
+	width: 200px;
+	height: 100px;
+	float:left;
+}

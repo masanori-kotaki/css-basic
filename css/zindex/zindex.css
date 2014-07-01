@@ -1,0 +1,19 @@
+#boxA{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: lightblue;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#boxB{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: lightgreen;
+	top: 100px;
+	left: 100px;
+	z-index: 2;
+}

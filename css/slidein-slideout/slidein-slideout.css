@@ -1,0 +1,49 @@
+body {
+	padding-top: 30px;
+    background: white;
+}
+img {
+	vertical-align: bottom;
+}
+#wrap {
+	width: 100%;
+	display: flex;
+}
+.box {
+	position: relative;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	background: #f9f9f9;
+	border: solid 1px #333;
+	width: 200px;
+	height: 150px;
+}
+.box a {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	z-index: 10;
+	width: 200px;
+	height: 150px;
+}
+.box a img {
+	display: block;
+	position: relative;
+    	top: 0;
+    	left: 0;
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+}
+.box.left a:hover img {
+	left: -100%;
+}
+.box.top a:hover img {
+	top: -100%;
+}
+.box p {
+	position: absolute;
+	padding: 30px 10px;
+	font-weight: bold;
+	font-size: 18px;
+}

@@ -1,0 +1,78 @@
+body {
+	padding-top: 100px;
+}
+img {
+	vertical-align: bottom;
+}
+#block {
+	position: relative;
+	width: 160px;
+	height: 190px;
+	margin: 0 auto;
+}
+.figure {
+	position: absolute;
+	z-index: 10;
+}
+.image {
+	margin-bottom: 5px;
+}
+.image img {
+	opacity: 0.7;
+}
+.figure:hover .image img {
+	opacity: 1;
+	display: block;
+	position: relative;
+	top: -10px;
+	transform: rotate(-5deg);
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);	
+}
+.name {
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+}
+.hoverEffect {
+	display: none;
+}
+.figure:hover + .hoverEffect {
+	display: block;
+}
+.hoverEffect .effectLine {
+	position: absolute;
+	top: -70px;
+	left: -70px;
+	width: 300px;
+	height: 300px;
+	background: url(http://www.kayac.com/svg/team/hoverEffect/effect09.svgz) no-repeat;
+	background-size: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+}
+.hoverEffect .onomatopoeia {
+	position: absolute;
+	top: -70px;
+	left: 150px;
+	width: 120px;
+	height: 210px;
+	background: url(http://www.kayac.com/svg/team/hoverEffect/onomatopoeia09.svgz) no-repeat;
+	background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-webkit-animation: onomatopoeiaAnime 0.5s ease-in-out infinite alternate;
+	-moz-animation: onomatopoeiaAnime 0.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes onomatopoeiaAnime {
+	0% { width: 110px; }
+	20% { width: 120px; }
+	40% { width: 110px; }
+	100% { width: 110px; }
+}
+@-moz-keyframes onomatopoeiaAnime {
+	0% { width: 110px; }
+	20% { width: 120px; }
+	40% { width: 110px; }
+	100% { width: 110px; }
+}

@@ -1,0 +1,15 @@
+#boxA{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: blue;
+	top: 100px;
+	left: 100px;
+}
+
+#boxB{
+	position: static;
+	width: 200px;
+	height: 200px;
+	background: green;
+}
