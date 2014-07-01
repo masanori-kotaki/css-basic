@@ -1,0 +1,32 @@
+#boxA { 
+    -webkit-transform: rotate(200deg);
+    -ms-transform: rotate(200deg);
+    -o-transform: rotate(200deg);
+    transform: rotate(200deg);
+    background: lightpink;
+    width: 100px;
+    height: 100px;
+    margin:20px;
+}
+
+#boxB { 
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    background: lightblue;
+    width: 100px;
+    height: 100px;
+    margin:20px;
+}
+
+#boxC { 
+    -webkit-transform: skew(25deg);
+    -ms-transform: skew(25deg);
+    -o-transform: skew(25deg);
+    transform: skew(25deg);
+    background: lightgreen;
+    width: 100px;
+    height: 100px;
+    margin:20px;
+}

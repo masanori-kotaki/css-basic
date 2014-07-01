@@ -1,0 +1,57 @@
+@-webkit-keyframes changebg {
+	0% { background: #00f; }
+	50% { background: #ff0;}
+	100% { background: #f00; }
+}
+@-o-keyframes changebg {
+	0% { background: #00f; }
+	50% { background: #ff0;}
+	100% { background: #f00; }
+}
+@-moz-keyframes changebg {
+	0% { background: #00f; }
+	50% { background: #ff0;}
+	100% { background: #f00; }
+}
+@keyframes changebg {
+	0% { background: #00f; }
+	50% { background: #ff0;}
+	100% { background: #f00; }
+}
+#boxA{
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	background: #f00;
+}
+#boxA:hover{
+	-webkit-animation-name: changebg;
+	-o-animation-name: changebg;
+	animation-name: changebg;
+	-webkit-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+}
+@-webkit-keyframes hoge {
+	0% { width: 50px; height: 50px; background: aqua; }
+	100% { width: 200px; height: 50px; background: blue; }
+}
+@-o-keyframes hoge {
+	0% { width: 50px; height: 50px; background: aqua; }
+	100% { width: 200px; height: 50px; background: blue; }
+}
+@-moz-keyframes hoge {
+	0% { width: 50px; height: 50px; background: aqua; }
+	100% { width: 200px; height: 50px; background: blue; }
+}
+@keyframes hoge {
+	0% { width: 50px; height: 50px; background: aqua; }
+	100% { width: 200px; height: 50px; background: blue; }
+}
+.sample {
+	-webkit-animation: hoge 5s ease 1s infinite alternate both;
+	-o-animation: hoge 5s ease 1s infinite alternate both;
+	animation: hoge 5s ease 1s infinite alternate both;
+}
+
+
